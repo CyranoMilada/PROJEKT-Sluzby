@@ -115,6 +115,10 @@ h2 {
 }
 
 @media screen and (min-width: 1100px) {
+  body {
+    padding: 60px 80px;
+  }
+
   .blok1 {
     display: flex;
     flex-direction: row-reverse;
@@ -125,7 +129,6 @@ h2 {
     flex: 1 0 50%;
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
   }
   .obruvod {
     width: 425px;
@@ -136,28 +139,47 @@ h2 {
   h2,
   .odstavec {
     text-align: left;
-    margin-left: 15px;
+  }
+
+  .uvod p {
+    margin-left: 0;
   }
 
   .blok2 {
     display: flex;
     flex-direction: row-reverse;
     padding: 80px 0;
-    margin-left: 10px;
   }
 
   .sluzby {
-    flex: 0 0 60%;
+    flex: 1 1 55%;
     display: flex;
   }
 
+  .nabidka {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    margin: 10px;
+    flex: 0 1 calc((100% - 80px) / 3);
+  }
+
   .popis {
-    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 20%;
+  }
+
+  .popis p {
+    width: 430px;
+  }
+
+  .blok2 .popis {
+    padding-left: 50px;
   }
 
   .blok3 {
     display: flex;
     padding-bottom: 80px;
-    margin-left: 10px;
   }
 }
