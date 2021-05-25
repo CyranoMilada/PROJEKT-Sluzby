@@ -3,8 +3,27 @@ html { box-sizing: border-box; }
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
+	font-weight: lighter;
+	color: #8B8B8B;
+	line-height: 21px;
+	background-color: #FAFAFA;
 }
+
+h1 {
+	font-size: 28px;
+	color: black;
+	line-height: 37px;
+}
+
+h2 {
+	font-weight: bold;
+	text-align: center;
+	color: black;
+}
+
+
+
 
 
 
