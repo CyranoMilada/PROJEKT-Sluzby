@@ -1,85 +1,163 @@
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
-
-body {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	font-weight: lighter;
-	color: #8B8B8B;
-	line-height: 21px;
-	background-color: #FAFAFA;
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
 }
 
-.zaklad {
-	width: 500px;
-	border: #8B8B8B;
-	margin: 10px auto;	
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #8b8b8b;
+  line-height: 21px;
+  background-color: #fafafa;
+  margin: 10px auto;
 }
 
 .obruvod {
-	width: 350px;
-	display: flex;
-	justify-content: center;
-	margin: 60px auto 0 auto;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 0 auto;
 }
 
 h1 {
-	font-size: 28px;
-	color: black;
-	line-height: 37px;
-	text-align: center;
+  font-size: 28px;
+  color: black;
+  line-height: 37px;
+  text-align: center;
 }
 
 h2 {
-	font-weight: bold;
-	text-align: center;
-	color: black;
-	padding-top: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  padding-top: 40px;
 }
 
 .button {
-	font-size: 14px;
-	color: white;
-	padding: 15px 40px;
-	border: black;
-	border-radius: 30px;
-	display: block;
-	margin: 10px auto;
-	text-align: center;
+  font-size: 14px;
+  color: white;
+  padding: 15px 40px;
+  border: black;
+  border-radius: 30px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
 }
 
 .modra {
-	background-color: #407BFF;
+  background-color: #407bff;
 }
 
 .seda {
-	background-color: #8B8B8B;
+  background-color: #8b8b8b;
 }
 
 .odstavec {
-	text-align: center;
-	width: 460px;
-	margin: 30px auto;
+  text-align: center;
+  width: 460px;
+  margin: 30px auto;
 }
 
 .nabidka {
-	display: flex;
-	align-items: center;
-	width: 460px;
-	margin: 20px auto;
-	background-color: white;
-	border-radius: 10px;
-	box-shadow: 0 4px 6px #407BFF1F;
+  display: flex;
+  align-items: center;
+  width: 460px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #407bff1f;
 }
 
 .nabidka img {
-	padding: 20px;
+  padding: 20px;
 }
 
 .nabidka p {
-	font-size: 13px;
-	margin-left: 10px;
+  font-size: 13px;
+  margin-left: 10px;
 }
 
+@media screen and (min-width: 640px) {
+  .tlacitka {
+    display: flex;
+    justify-content: center;
+  }
 
+  .button {
+    display: flex;
+  }
 
+  .sluzby {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nabidka {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    flex: 0 0 calc((100% - 120px) / 3);
+  }
+
+  .nabidka img {
+    margin: 20px auto 0 auto;
+  }
+
+  .nabidka p {
+    text-align: center;
+    margin: 20px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .blok1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .uvod {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .obruvod {
+    width: 425px;
+    flex: 0 0 50%;
+  }
+
+  h1,
+  h2,
+  .odstavec {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .blok2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 80px 0;
+    margin-left: 10px;
+  }
+
+  .sluzby {
+    flex: 0 0 60%;
+    display: flex;
+  }
+
+  .popis {
+    flex: 0 0 40%;
+  }
+
+  .blok3 {
+    display: flex;
+    padding-bottom: 80px;
+    margin-left: 10px;
+  }
+}
