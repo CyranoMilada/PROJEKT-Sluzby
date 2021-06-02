@@ -92,6 +92,14 @@ h2 {
     display: flex;
   }
 
+  .modra {
+    margin-right: 15px;
+  }
+
+  .seda {
+    margin-left: 15px;
+  }
+
   .sluzby {
     display: flex;
     justify-content: center;
@@ -135,6 +143,16 @@ h2 {
   .obruvod {
     width: 425px;
     flex: 0 0 50%;
+  }
+
+  .tlacitka {
+    justify-content: flex-start;
+  }
+
+  .modra,
+  .seda {
+    margin-left: 0;
+    margin-right: 20px;
   }
 
   h1,
